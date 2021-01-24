@@ -1,8 +1,78 @@
 * {
-   margin: 0%;
-   padding: 0%;
-   box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+body {
+  background-color: blanchedalmond;
+}
+header {
+  min-width: 1000px;
+  padding: 0 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.2);
+  transition: width 0.5s;
+}
+.mini {
+  position: relative;
+  margin: 120px auto 0;
+  width: 80vw;
+  transition: width 0.5s;
+}
+.extend {
+  position: fixed;
+  left: 50%;
+  top: 3px;
+  width: 90vw;
+  transform: translateX(-50%);
+  border: 2px dashed black;
+  transition: width 0.5s;
+}
+#leftHeader {
+  display: flex;
+  justify-content: space-between;
+  min-width: 400px;
+}
+#rightHeader {
+  display: flex;
+  justify-content: space-between;
+  min-width: 400px;
 }
 
+.titles {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  height: 35px;
+  align-items: center;
+  transition: all 0.2s;
+}
+.titles:hover {
+  color: blueviolet;
+  transition: all 0.2s;
+}
 
+#redLine {
+  width: 100px;
+  height: 4px;
+  background-color: blueviolet;
+  border-radius: 25px;
+  position: absolute;
+  bottom: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.3s ease;
+  z-index: +100;
+}
 
+#justForScrollEnabling {
+  margin-top: 3000px;
+}
